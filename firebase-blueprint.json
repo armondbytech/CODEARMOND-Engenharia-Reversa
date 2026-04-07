@@ -1,0 +1,46 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "Stores user preferences and basic information.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "The unique ID of the user." },
+        "email": { "type": "string", "format": "email", "description": "The user's email address." },
+        "displayName": { "type": "string", "description": "The user's display name." },
+        "photoURL": { "type": "string", "description": "The user's profile photo URL." },
+        "preferences": {
+          "type": "object",
+          "properties": {
+            "defaultColor": { "type": "string", "description": "The user's preferred default QR code color." }
+          }
+        },
+        "createdAt": { "type": "string", "format": "date-time", "description": "When the profile was created." }
+      },
+      "required": ["uid", "email"]
+    },
+    "QRCodeConfig": {
+      "title": "QR Code Configuration",
+      "description": "Stores a saved QR code configuration.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "The unique ID of the QR code." },
+        "name": { "type": "string", "description": "A friendly name for the saved QR code." },
+        "data": { "type": "string", "description": "The content of the QR code." },
+        "config": { "type": "object", "description": "The full configuration object for qr-code-styling." },
+        "createdAt": { "type": "string", "format": "date-time", "description": "When the QR code was saved." }
+      },
+      "required": ["id", "data", "config", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile documents."
+    },
+    "/users/{userId}/qr_history/{qrId}": {
+      "schema": "QRCodeConfig",
+      "description": "History of saved QR codes for each user."
+    }
+  }
+}
