@@ -36,14 +36,8 @@ Desenvolvido com foco em experiência do usuário e privacidade, o sistema proce
 
 ## 🔧 Como Executar
 
-**Pré-requisitos:** Node.js instalado na máquina.
-
-1. Clone o repositório:
-```bash
-   git clone https://github.com/sophiassantos/engenharia-reversa.git
-```
-2. Instale as dependências:
-```bash
-   npm install
-```
-3. Crie um arquivo `.env.local` na raiz do projeto e adicione sua chave da API Gemini:
+1. Clone o repositório.
+2. Instale as dependências: `npm install`.
+3. Adicione sua chave no `.env.local`: `GEMINI_API_KEY=sua_chave_aqui`.
+4. Execute o comando: `npm run dev`.
+5. Acesse em: `http://localhost:3000`.
