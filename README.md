@@ -1,20 +1,48 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🟧 CODEARMOND QR Studio — Gerador Inteligente de QR Codes com IA
 
-# Run and deploy your AI Studio app
+## 📝 Descrição do Projeto
 
-This contains everything you need to run your app locally.
+Este projeto consiste em um gerador de QR Codes profissional com inteligência artificial integrada, desenvolvido sob a marca **CODEARMOND QR Studio**. O objetivo principal é oferecer ao usuário controle total sobre a criação e personalização visual de QR Codes, combinando design moderno com análise inteligente via IA — que avalia a **segurança e utilidade** do conteúdo inserido antes da geração.
 
-View your app in AI Studio: https://ai.studio/apps/e90955d0-69f8-44c1-9a9d-be1b94c385db
+Desenvolvido com foco em experiência do usuário e privacidade, o sistema processa os dados localmente e os criptografa ao salvar no Firebase, garantindo que o conteúdo dos QR Codes não seja rastreado sem permissão do usuário.
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## 🚀 Tecnologias Utilizadas
 
+- **Linguagem:** TypeScript
+- **Framework:** React 19 + Vite 6
+- **Estilização:** Tailwind CSS v4
+- **Componentes:** shadcn/ui + Base UI + Lucide React
+- **IA:** Google Gemini API (`@google/genai`)
+- **Backend/Infra:** Firebase 12 + Firestore + Express.js
+- **Animações:** Motion
+- **Ferramentas:** Google AI Studio
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## ✨ Funcionalidades
+
+- **Análise Inteligente com IA:** A API Gemini analisa a segurança e utilidade do conteúdo do QR Code antes da geração.
+- **Configurações Base:** Personalização do conteúdo e parâmetros do QR Code.
+- **Estilo Visual:** Customização completa da aparência, incluindo paleta de cores personalizada.
+- **Exportação:** Download do QR Code gerado em PNG ou SVG.
+- **Proteção de Privacidade:** Dados processados localmente e criptografados no Firebase.
+- **Autenticação:** Login com Google integrado.
+- **Interface Responsiva:** Navegação com seções de Recursos, Preços e Docs.
+
+---
+
+## 🔧 Como Executar
+
+**Pré-requisitos:** Node.js
+
+1. Clone o repositório:
+```bash
+   git clone https://github.com/sophiassantos/engenharia-reversa.git
+```
+2. Instale as dependências:
+```bash
+   npm install
+```
+3. Configure sua chave da API no arquivo `.env.local`:
