@@ -38,11 +38,7 @@ Desenvolvido com foco em experiência do usuário e privacidade, o sistema proce
 **Pré-requisitos:** Node.js
 
 1. Clone o repositório:
-```bash
    git clone https://github.com/sophiassantos/engenharia-reversa.git
-```
 2. Instale as dependências:
-```bash
    npm install
-```
 3. Configure sua chave da API no arquivo `.env.local`:
