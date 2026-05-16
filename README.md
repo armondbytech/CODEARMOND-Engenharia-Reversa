@@ -23,22 +23,21 @@ Desenvolvido com foco em experiência do usuário e privacidade, o sistema proce
 
 ## ✨ Funcionalidades
 
-- **Análise Inteligente com IA:** A API Gemini analisa a segurança e utilidade do conteúdo do QR Code antes da geração.
-- **Configurações Base:** Personalização do conteúdo e parâmetros do QR Code.
-- **Estilo Visual:** Customização completa da aparência, incluindo paleta de cores personalizada.
-- **Exportação:** Download do QR Code gerado em PNG ou SVG.
+- **Análise Inteligente com IA:** Insira dados no QR Code para que a IA analise a segurança e utilidade.
+- **Suporte a logos:** Insira sua marca diretamente no centro do QR Code.
+- **Gradientes personalizados:** Escolha cores de início e fim para criar designs únicos.
+- **Estilo Visual:** Customize completamente a aparência com paleta de cores personalizada.
+- **Exportação:** Baixe o QR Code gerado em PNG ou SVG.
 - **Proteção de Privacidade:** Dados processados localmente e criptografados no Firebase.
 - **Autenticação:** Login com Google integrado.
-- **Interface Responsiva:** Navegação com seções de Recursos, Preços e Docs.
+- **Modo dark/light:** Interface adaptável com alternância entre temas.
 
 ---
 
 ## 🔧 Como Executar
 
-**Pré-requisitos:** Node.js
-
-1. Clone o repositório:
-   git clone https://github.com/sophiassantos/engenharia-reversa.git
-2. Instale as dependências:
-   npm install
-3. Configure sua chave da API no arquivo `.env.local`:
+1. Clone o repositório.
+2. Instale as dependências: `npm install`.
+3. Configure sua chave no `.env.local`: `GEMINI_API_KEY=sua_chave_aqui`.
+4. Execute o comando: `npm run dev`.
+5. Acesse em: `http://localhost:3000`.
